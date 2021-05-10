@@ -1,13 +1,18 @@
 import React, {useContext, useState , useEffect} from "react";
 import {withRouter} from 'react-router-dom';
 import {ProductsContext} from "../../context/products-context";
+import {CartContext} from "../../context/cart-context";
+import {isInCart} from "../../helper";
 import Layout from "../shared/layout";
 import './single-product.styles.scss';
 
 const SingleProduct =({match, history: {push}} ) => {
     const {products} = useContext(ProductsContext);
+    const {addProduct, cartItems,increase} = useContext(CartContext);
     const { id } = match.params;
     const [product, setProduct] = useState(null);
+
+
     useEffect(()=>{
         const product = products.find(item => Number(item.id) === Number(id));
 
@@ -22,6 +27,8 @@ const SingleProduct =({match, history: {push}} ) => {
     if (!product) {return null}
 
     const {imageUrl, title, price, description } = product;
+    const itemInCart = isInCart(product, cartItems)
+
     return (
         <Layout>
             <div className='single-product-container'>
@@ -38,9 +45,22 @@ const SingleProduct =({match, history: {push}} ) => {
 
 
                 <div className='add-to-cart-buttons'>
-                    <button className='button is-white gato-btn' id = 'btn-white-outline-add'>
-                        ADD TO CART
-                    </button>
+                    {
+                        !itemInCart &&
+                        <button className='button is-white gato-btn'
+                                id = 'btn-white-outline-add'
+                                onClick={()=>addProduct(product)}>
+                            ADD TO CART
+                        </button>
+                    }
+                    {
+                        itemInCart &&
+                        <button className='button is-white gato-btn'
+                                id = 'btn-white-outline-add'
+                                onClick={()=>increase(product)}>
+                            ADD MORE
+                        </button>
+                    }
                     <button className='button is-black gato-btn' id ='btn-white-outline-checkout'>
                         PROCEED TO CHECKOUT
                     </button>

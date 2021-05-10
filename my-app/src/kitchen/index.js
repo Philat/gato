@@ -5,6 +5,7 @@ const Kitchen_Data = [
         title: 'Chicken Dinner',
         description: 'Chicken, Tomato and Mayonaise',
         imageUrl: '/images/dinner1.png',
+        url: 'product/1',
         price: 85
     },
     {
@@ -12,6 +13,7 @@ const Kitchen_Data = [
         title: 'Fish Dinner',
         description: 'Griled Salmon and Rice',
         imageUrl: '/images/dinner2.png',
+        url: 'product/2',
         price: 125
     },
     {
@@ -19,6 +21,7 @@ const Kitchen_Data = [
         title: 'Catfish Dinner',
         description: 'Catfish and pearl barley',
         imageUrl: '/images/dinner3.png',
+        url: 'product/3',
         price: 100
     },
     {
@@ -26,6 +29,7 @@ const Kitchen_Data = [
         title: 'Vegetarian Dinner',
         description: 'Shiitake mushrooms, tomatoes, gluten-free bread and souse',
         imageUrl: '/images/dinner4.png',
+        url: 'product/4',
         price: 90
     },
 
@@ -35,6 +39,7 @@ const Kitchen_Data = [
         title: 'Feta Salad',
         description: 'Feta, bell pepper,cauliflower and lettuce leaves',
         imageUrl: '/images/salad1.png',
+        url: 'product/5',
         price: 85
     },
     {
@@ -42,6 +47,7 @@ const Kitchen_Data = [
         title: 'Ceasar Salad',
         description: 'Eggs, Crisps, Souse, Chicken and lettuce',
         imageUrl: '/images/salad2.png',
+        url: 'product/6',
         price: 125
     },
     {
@@ -49,6 +55,7 @@ const Kitchen_Data = [
         title: 'Fruit Fresh Salad',
         description: 'Strawberry, Grapefruit, Lime, Grapes, Bananas and green leaves',
         imageUrl: '/images/salad3.png',
+        url: 'product/7',
         price: 100
     },
     {
@@ -56,6 +63,7 @@ const Kitchen_Data = [
         title: 'Crisps and Vegetables',
         description: 'Cherry tomatoes, Crisps, Onion, Mint and Lettuce',
         imageUrl: '/images/salad4.png',
+        url: 'product/8',
         price: 90
     },
 
@@ -64,6 +72,7 @@ const Kitchen_Data = [
         title: 'Black Tea',
         description: 'Tea, lime',
         imageUrl: '/images/drink1.png',
+        url: 'product/9',
         price: 85
     },
     {
@@ -71,6 +80,7 @@ const Kitchen_Data = [
         title: 'Green Tea',
         description: 'Tea and mint',
         imageUrl: '/images/drink2.png',
+        url: 'product/10',
         price: 125
     },
     {
@@ -78,6 +88,7 @@ const Kitchen_Data = [
         title: 'Coffee',
         description: 'Americano (milk or water)',
         imageUrl: '/images/drink3.png',
+        url: 'product/11',
         price: 100
     },
     {
@@ -85,6 +96,7 @@ const Kitchen_Data = [
         title: 'Hibiscus',
         description: 'Hibiscus tea and ginger',
         imageUrl: '/images/drink4.png',
+        url: 'product/12',
         price: 90
     },
 
@@ -93,6 +105,7 @@ const Kitchen_Data = [
         title: 'Tom Yam Soup',
         description: 'Coconut Milk, Shrimps, Chilly, lime, rice',
         imageUrl: '/images/soup1.png',
+        url: 'product/13',
         price: 85
     },
     {
@@ -100,6 +113,7 @@ const Kitchen_Data = [
         title: 'Gazpacho Soup',
         description: 'Cold tomato soup with vegetables',
         imageUrl: '/images/soup2.png',
+        url: 'product/14',
         price: 125
     },
     {
@@ -107,6 +121,7 @@ const Kitchen_Data = [
         title: 'Mushroom cream-soup',
         description: 'Potato, cream, mascarpone, champignons,',
         imageUrl: '/images/soup3.png',
+        url: 'product/15',
         price: 100
     },
     {
@@ -114,6 +129,7 @@ const Kitchen_Data = [
         title: 'Shiitaki Miso Soup',
         description: 'Miso, shiitaki mushrooms, potato, onion ,egg, tofu',
         imageUrl: '/images/soup4.png',
+        url: 'product/16',
         price: 90
     }
 
