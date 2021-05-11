@@ -4,7 +4,10 @@ import Shop from "./components/pages/shop/shop";
 import Notfound from "./components/notfound";
 import SingleProduct from "./components/single-product/single-product";
 import CartPage from "./components/pages/cart-page/cart-page";
+import Checkout from "./components/checkout/checkout";
+import Success from "./components/success/success";
 import './App.scss';
+
 
 
 function App() {
@@ -15,6 +18,8 @@ function App() {
             <Route path ='/kitchen' component={Shop}/>
             <Route path ='/product/:id' component={SingleProduct} />
             <Route path = '/cart' component = {CartPage} />
+            <Route path = '/checkout' component = {Checkout} />
+            <Route path='/thank-you' component = {Success} />
             <Route path='*' component = {Notfound} />
         </Switch>
     </div>

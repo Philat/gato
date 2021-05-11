@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav className='nav-menu container'>
             <div className='logo'>
-                <Link to='/'>Gato Grigio</Link>
+                <Link to='/'>Gatto Grigio</Link>
             </div>
 
             <ul>

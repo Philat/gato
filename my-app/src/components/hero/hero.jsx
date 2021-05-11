@@ -8,7 +8,7 @@ const Hero = () => {
                 <div className="hero-body">
                     <div className='container'>
                         <h1 className="title">
-                            Welcome to Gato Grigio Maison
+                            Welcome to Gatto Grigio Maison
                         </h1>
 
                         <div className="shop-now-btn">
