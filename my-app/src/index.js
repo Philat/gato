@@ -5,13 +5,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProductsContextProvider from './context/products-context';
+import UserContextProvider from "./context/user-context";
 import CartContextProvider from "./context/cart-context";
+
 
 ReactDOM.render(
     <BrowserRouter>
         <ProductsContextProvider>
             <CartContextProvider>
-                <App />
+                <UserContextProvider>
+                    <App />
+                </UserContextProvider>
             </CartContextProvider>
         </ProductsContextProvider>
     </BrowserRouter>,
