@@ -8,30 +8,7 @@ const Kitchen_Data = [
         url: 'product/1',
         price: 85
     },
-    {
-        id: 2,
-        title: 'Fish Dinner',
-        description: 'Griled Salmon and Rice',
-        imageUrl: '/images/dinner2.png',
-        url: 'product/2',
-        price: 125
-    },
-    {
-        id: 3,
-        title: 'Catfish Dinner',
-        description: 'Catfish and pearl barley',
-        imageUrl: '/images/dinner3.png',
-        url: 'product/3',
-        price: 100
-    },
-    {
-        id: 4,
-        title: 'Vegetarian Dinner',
-        description: 'Shiitake mushrooms, tomatoes, gluten-free bread and souse',
-        imageUrl: '/images/dinner4.png',
-        url: 'product/4',
-        price: 90
-    },
+
 
 
     {
@@ -42,6 +19,7 @@ const Kitchen_Data = [
         url: 'product/5',
         price: 85
     },
+
     {
         id: 6,
         title: 'Ceasar Salad',
@@ -58,6 +36,34 @@ const Kitchen_Data = [
         url: 'product/7',
         price: 100
     },
+
+    {
+        id: 3,
+        title: 'Catfish Dinner',
+        description: 'Catfish and pearl barley',
+        imageUrl: '/images/dinner3.png',
+        url: 'product/3',
+        price: 100
+    },
+
+    {
+        id: 2,
+        title: 'Fish Dinner',
+        description: 'Griled Salmon and Rice',
+        imageUrl: '/images/dinner2.png',
+        url: 'product/2',
+        price: 125
+    },
+
+    {
+        id: 4,
+        title: 'Vegetarian Dinner',
+        description: 'Shiitake mushrooms, tomatoes, gluten-free bread and souse',
+        imageUrl: '/images/dinner4.png',
+        url: 'product/4',
+        price: 90
+    },
+
     {
         id: 8,
         title: 'Crisps and Vegetables',

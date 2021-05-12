@@ -17,18 +17,17 @@ const Header = () => {
             </div>
 
             <ul>
-                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/'>Living Room</Link></li>
                 <li><Link to='/kitchen'>Kitchen</Link></li>
                 <li><Link to='/library'>Library</Link></li>
-                {
-                    !user && <li><Link to='/sign-in'>Sign In</Link></li>
-                }
-                {
-                    user && <li onClick={()=>auth.signOut()}><Link>Sign Out</Link></li>
-                }
-                {
-                    !user && <li><Link to='/sign-up'>Sign Up</Link></li>
-                }
+                <li><Link to='/garden'>Garden</Link></li>
+                <li><Link to='/bedroom'>Bedrooms</Link></li>
+                <li><Link to='/cabinet'>Cabinet</Link></li>
+
+                {!user && <li><Link to='/sign-in'>Sign In</Link></li>}
+                {user && <li onClick={()=>auth.signOut()}><Link>Sign Out</Link></li>}
+                {!user && <li><Link to='/sign-up'>Sign Up</Link></li>}
+
             </ul>
             <CartIcon/>
         </nav>

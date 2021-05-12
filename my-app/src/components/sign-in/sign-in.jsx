@@ -26,7 +26,6 @@ const SignIn = ({history:{push}}) =>{
     }
 
     return(
-        <Layout>
             <div className='sign-in'>
                 <h1 className='form-container'>
                     Sign In
@@ -78,7 +77,6 @@ const SignIn = ({history:{push}}) =>{
                     }
                 </Formik>
             </div>
-        </Layout>
     );
 }
 

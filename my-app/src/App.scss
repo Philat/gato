@@ -15,6 +15,11 @@ img{
   width: 100%;
 }
 
+main{
+  max-width: 1500px;
+  margin: 0 auto
+}
+
 gato-room{
   width: 60%;
   margin: 0 auto;
@@ -32,6 +37,7 @@ gato-room{
 
   .featured-section-title {
     font-size: 2rem;
+
   }
 
   .featured-image {
@@ -130,6 +136,12 @@ form {
     input[type=email],
     input[type=password]{
       width: 65%;
+    }
+  }
+
+  .product-list{
+    .featured-image{
+      height: 260px;
     }
   }
 }

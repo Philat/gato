@@ -41,7 +41,6 @@ const SignUp = ({ history: { push } }) => {
     }
 
     return (
-        <Layout>
             <div className='sign-up'>
                 <h1>Sign Up</h1>
                 <div className='form-container'>
@@ -106,7 +105,6 @@ const SignUp = ({ history: { push } }) => {
                     </Formik>
                 </div>
             </div>
-        </Layout>
     );
 }
 
