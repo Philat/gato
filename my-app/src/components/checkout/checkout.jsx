@@ -22,22 +22,22 @@ const Checkout = ({history}) => {
         <Layout>
             <div className='checkout'>
                 <div style={addressShown}>
-                <h2>Checkout Summary</h2>
-                <h3>{`Total Items: ${itemCount}`}</h3>
-                <h4>{`Amount to Pay: ₽${total}`}</h4>
+                <h2>Информация о заказе</h2>
+                <h3>{`Количество: ${itemCount}`}</h3>
+                <h4>{`К оплате: ₽${total}`}</h4>
                     <ShippingAddress setShipping = {setShipping}/>
                 </div>
 
 
                 <div style={addressNotShown}>
-                    <h2>Check your data</h2>
-                    <h3 className='checkout-block'>{`Total Items: ${itemCount}`}</h3>
-                    <h4>{`Amount to Pay: ₽${total}`}</h4>
-                    <h4>{`Name: ${shipping? shipping.name: 'none'}`}</h4>
+                    <h2>Проверьте данные</h2>
+                    <h3 className='checkout-block'>{`Количество: ${itemCount}`}</h3>
+                    <h4>{`К оплате: ₽${total}`}</h4>
+                    <h4>{`Имя: ${shipping? shipping.name: 'none'}`}</h4>
                     <h4>{`Email: ${shipping? shipping.email:'none'}`}</h4>
-                    <h4>{`Address: ${shipping? shipping.address:'none'}`}</h4>
+                    <h4>{`Адрес: ${shipping? shipping.address:'none'}`}</h4>
                     <button className='button gato-btn is-black checkout-block'
-                                onClick={() =>{history.push('/thank-you');clearCart()}}>CONFIRM</button>
+                                onClick={() =>{history.push('/thank-you');clearCart()}}>ПОДТВЕРДИТЬ</button>
 
 
                 </div>

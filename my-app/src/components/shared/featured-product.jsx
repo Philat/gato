@@ -26,7 +26,7 @@ const FeaturedProduct = (props)=>{
                   <button
                       className='button is-black gato-btn'
                       onClick={()=>addProduct(product)}>
-                      ADD TO CART </button>
+                      В КОРЗИНУ </button>
               }
               {
                   itemInCart &&
@@ -34,7 +34,7 @@ const FeaturedProduct = (props)=>{
                       className='button is-white gato-btn'
                       id = 'btn-white-outline'
                       onClick={()=>increase(product)}>
-                      ADD MORE </button>
+                      ДОБАВИТЬ ЕЩЕ </button>
               }
 
           </div>

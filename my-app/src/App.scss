@@ -11,6 +11,25 @@
   min-height: 100vh;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'GilroyThin', sans-serif;
+  font-weight: bold!important;
+  button{
+    font-family: 'GilroyThin'!important;
+    font-weight: bold!important;
+}
+}
+
+@font-face {
+  font-family: "GilroyThin";
+  src: url("./GilroyThin.eot?");
+  src: url("./GilroyThin.eot?#iefix")format("embedded-opentype"),
+  url("./GilroyThin.woff") format("woff"),
+  url("./GilroyThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100!important;
+}
+
 img{
   width: 100%;
 }
@@ -79,12 +98,14 @@ gato-room{
   margin-top: 0;
   margin-bottom: 10px;
   min-height: 44px;
+  border-radius: 10px;
 }
 
 .gato-input {
   width: 100%;
   padding: 10px;
   margin-bottom: 1rem;
+  border-radius: 10px;
 }
 
 form {

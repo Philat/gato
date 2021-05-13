@@ -17,15 +17,15 @@ const Library = () => {
             {
                 !user &&
                 <div>
-                    <h2 className='disclaimer'>The following services will be available only for registered users.<br/>
-                        At the library, you can reserve materials you wish to read on your next visit.</h2>
+                    <h2 className='disclaimer'>Услуги библиотеки доступны только зарегистрированным пользователям.<br/>
+                        В библиотеке вы можете читать любимые книги мистера Грея <br/> в течение всего вашего пребывания</h2>
                     <SignIn/>
                 </div>
 
             }
             {
                 user && <div>
-                    <h1>You are in library</h1>
+                    <h1>Вы в библиотеки</h1>
                     <Books></Books>
                 </div>
             }

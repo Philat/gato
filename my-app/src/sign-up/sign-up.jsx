@@ -42,7 +42,7 @@ const SignUp = ({ history: { push } }) => {
 
     return (
             <div className='sign-up'>
-                <h1>Sign Up</h1>
+                <h1>Регистрация</h1>
                 <div className='form-container'>
                     <Formik
                         initialValues={initialValues}
@@ -60,7 +60,7 @@ const SignUp = ({ history: { push } }) => {
                                                 name='firstname'
                                                 onChange={handleChange}
                                                 value={values.firstname}
-                                                placeholder='First Name'
+                                                placeholder='Имя'
                                                 className={ 'gato-input ' + ( firstname ? 'error' : '' ) }
                                             />
                                         </div>
@@ -80,7 +80,7 @@ const SignUp = ({ history: { push } }) => {
                                                 name='password'
                                                 onChange={handleChange}
                                                 value={values.password}
-                                                placeholder='Password'
+                                                placeholder='Пароль'
                                                 className={ 'gato-input ' + ( password ? 'error' : '' ) }
                                             />
                                         </div>
@@ -90,7 +90,7 @@ const SignUp = ({ history: { push } }) => {
                                                 disabled={isSubmitting}
                                                 className='button is-black gato-btn submit'
                                             >
-                                                Sign Up
+                                                РЕГИСТРАЦИЯ
                                             </button>
                                         </div>
                                         <div className='error-message'>

@@ -9,7 +9,7 @@ const Notfound = () => {
 
     return (
       <Layout>
-          <p style={style}>Unfortunately we cannot find this page</p>
+          <p style={style}>К Сожалению, мы не нашли эту страницу</p>
       </Layout>
     );
 }

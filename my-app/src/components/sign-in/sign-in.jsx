@@ -28,7 +28,7 @@ const SignIn = ({history:{push}}) =>{
     return(
             <div className='sign-in'>
                 <h1 className='form-container'>
-                    Sign In
+                    Вход
                 </h1>
                 <Formik initialValues={initialValues}
                         onSubmit={handleSignIn}>
@@ -50,7 +50,7 @@ const SignIn = ({history:{push}}) =>{
                                                name='password'
                                                onChange={handleChange}
                                                value={values.password}
-                                               placeholder='Password'
+                                               placeholder='Пароль'
                                                className={ 'gato-input ' + (password ? 'error' : '') }/>
 
                                     </div>
@@ -60,7 +60,7 @@ const SignIn = ({history:{push}}) =>{
                                             type='submit'
                                             disabled={isSubmitting}
                                             className='button is-black gato-btn submit'>
-                                            Sign In
+                                            ВОЙТИ
                                         </button>
                                     </div>
 

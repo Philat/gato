@@ -50,7 +50,7 @@ const SingleProduct =({match, history: {push}} ) => {
                         <button className='button is-white gato-btn'
                                 id = 'btn-white-outline-add'
                                 onClick={()=>addProduct(product)}>
-                            ADD TO CART
+                            В КОРЗИНУ
                         </button>
                     }
                     {
@@ -58,11 +58,11 @@ const SingleProduct =({match, history: {push}} ) => {
                         <button className='button is-white gato-btn'
                                 id = 'btn-white-outline-add'
                                 onClick={()=>increase(product)}>
-                            ADD MORE
+                            ДОБАВИТЬ ЕЩЕ
                         </button>
                     }
                     <button className='button is-black gato-btn' id ='btn-white-outline-checkout'>
-                        PROCEED TO CHECKOUT
+                        ПЕРЕЙТИ К ОПЛАТЕ
                     </button>
                 </div>
 

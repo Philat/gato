@@ -19,7 +19,7 @@ const ShippingAddress = ({ setShipping }) => {
     }
     return (
         <div>
-            <h4>Shipping Address</h4>
+            <h4>Доставка</h4>
             <Formik
                 initialValues={initialValues}
                 validate={validate}
@@ -39,7 +39,7 @@ const ShippingAddress = ({ setShipping }) => {
                                         name='name'
                                         onChange={handleChange}
                                         value={values.name}
-                                        placeholder='Name'
+                                        placeholder='Имя'
                                         className={ 'gato-input ' + (name ? 'error' : '') }
                                     />
                                 </div>
@@ -59,13 +59,13 @@ const ShippingAddress = ({ setShipping }) => {
                                         name='address'
                                         onChange={handleChange}
                                         value={values.address}
-                                        placeholder='Address'
+                                        placeholder='Адрес'
                                         className={ 'gato-input ' + (address ? 'error' : '') }
                                     />
                                 </div>
                                 <div className='submit-btn'>
                                     <button type='submit' className='button is-black gato-btn submit'>
-                                        CONTINUE
+                                        ПРОДОЛЖИТЬ
                                     </button>
                                 </div>
                             </form>

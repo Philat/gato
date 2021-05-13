@@ -8,12 +8,12 @@ const Hero = () => {
                 <div className="hero-body">
                     <div className='container'>
                         <h1 className="title">
-                            Welcome to Gatto Grigio Maison
+                            Добро пожаловать в Gatto Grigio
                         </h1>
 
                         <div className="shop-now-btn">
                             <button className='button is-black' id = 'to-bed-rooms'>
-                                Rest in Bed Rooms
+                                Выбрать комнату
                             </button>
                         </div>
                     </div>
