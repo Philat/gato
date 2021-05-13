@@ -11,12 +11,12 @@ const Header = () => {
     console.log('user', user);
 
     return (
-        <nav className='nav-menu container'>
+        <nav className='nav-menu container' >
             <div className='logo'>
                 <Link to='/'>Gatto Grigio</Link>
             </div>
 
-            <ul>
+            <ul id='header'>
                 <li><Link to='/'>Гостиная</Link></li>
                 <li><Link to='/kitchen'>Кухня</Link></li>
                 <li><Link to='/library'>Библиотека</Link></li>
