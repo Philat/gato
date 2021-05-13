@@ -25,7 +25,7 @@ const Library = () => {
             }
             {
                 user && <div>
-                    <h1>Вы в библиотеки</h1>
+
                     <Books></Books>
                 </div>
             }

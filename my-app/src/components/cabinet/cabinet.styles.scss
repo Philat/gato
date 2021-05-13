@@ -1,0 +1,26 @@
+.hero.is-info{
+  background-color: white!important;
+}
+.hero-image.cabinet-image {
+  background: url("../../assets/cabinet.png"), 100% 100% ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero{
+  .container{
+    width: 60%;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1rem;
+    margin:0;
+  }
+}
+
+.cabinet{
+  margin-top: 4rem;
+  h1{
+    text-align: center;
+  }
+}

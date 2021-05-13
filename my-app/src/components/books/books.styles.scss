@@ -1,0 +1,27 @@
+.hero.is-info{
+  background-color: white!important;
+}
+.hero-image.books-image {
+  background: url("../../assets/books.png"), 100% 100% ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+  .container{
+    width: 60%;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1rem;
+    margin:0;
+  }
+}
+
+.books{
+  margin-top: 4rem;
+  h1{
+    text-align: center;
+  }
+}
