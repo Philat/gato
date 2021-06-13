@@ -5,8 +5,9 @@
   background: url("../../assets/books.png"), 100% 100% ;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  width: 100%;
+  background-size: contain;
+  width: 85%;
+  margin: auto;
   height: 100%;
 }
 

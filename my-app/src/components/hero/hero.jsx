@@ -4,7 +4,7 @@ import './hero.styles.scss';
 const Hero = () => {
     return (
         <section className="hero is-large is-info hero-image">
-            <div className='hero-image'>
+            <div className='hero-image main-picture'>
                 <div className="hero-body">
                     <div className='container'>
                         <h1 className="title">

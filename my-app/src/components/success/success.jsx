@@ -10,7 +10,7 @@ const Success = (history) => {
     return (
         <Layout>
             <div className='thank-you checkout'>
-                <h2 className= 'checkout-block'>Thank you for your order!</h2>
+                <h2 className= 'checkout-block'>Спасибо за заказ!</h2>
                 <p className='checkout-block'>Listen to your phone when we're calling for you...</p>
                 <p>Only in email info will be for you ...</p>
                 <p>don't wait for your visit and further return</p>
