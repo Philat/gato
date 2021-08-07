@@ -1,13 +1,16 @@
 import React, {useContext, useState} from "react";
 import {withRouter} from "react-router-dom";
 import {CartContext} from "../../context/cart-context";
+import CartItem from "../pages/cart-page/cart-items";
 import Layout from "../shared/layout";
 import ShippingAddress from "./custom-checkout/shipping-adress";
 import './checkout.styles.scss'
+import Total from "../pages/cart-page/total";
 
 
 const Checkout = ({history}) => {
-    const {itemCount, total,clearCart} = useContext(CartContext);
+    const {cartItems, itemCount, total,increase, decrease,removeProduct, clearCart } = useContext(CartContext);
+    const funcs = {increase, decrease, removeProduct}
     const  [shipping, setShipping] = useState(null);
 
     const addressShown = {
@@ -37,10 +40,25 @@ const Checkout = ({history}) => {
                     <h4>{`Email: ${shipping? shipping.email:'none'}`}</h4>
                     <h4>{`Адрес: ${shipping? shipping.address:'none'}`}</h4>
                     <button className='button gato-btn is-black checkout-block'
-                                onClick={() =>{history.push('/thank-you');clearCart()}}>ПОДТВЕРДИТЬ</button>
+                                onClick={() =>{window.open("/thank-you",'self');clearCart()}}>ПОДТВЕРДИТЬ</button>
 
 
                 </div>
+
+                {
+                    cartItems.length ===0 ? <div className='empty-cart'>Ваша корзина пуста</div>
+                        :
+                        <>
+                            <div className='cart-page'>
+                                <div className='cart-item-container'>
+                                    {
+                                        cartItems.map(item => <CartItem {...item} key = {item.id} {...funcs}/>)
+                                    }
+                                </div>
+                            </div>
+                            <Total itemCount={itemCount} total={total} clearCart={clearCart}/>
+                        </>
+                }
 
             </div>
         </Layout>

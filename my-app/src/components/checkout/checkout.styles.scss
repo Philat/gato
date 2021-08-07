@@ -8,32 +8,40 @@
     margin-top: 1rem;
   }
 
-  button {
-    width: 200px;
-    margin: 0 auto;
+  .btn-increase, .btn-decrease, .btn-trash, .total-container{
+    display: none;
   }
+  .cart-item{
+    margin-left: 0;
+    width: 100%;
+}
 
-  .stripe-card {
-    margin: 1rem 0;
-  }
+button {
+width: 200px;
+margin: 0 auto;
+}
 
-  .card-number {
-    margin-top: 2rem;
-  }
+.stripe-card {
+margin: 1rem 0;
+}
 
-  .card-element {
-    border: 1px solid grey;
-    border-radius: 3px;
-    padding: 10px;
-    width: 55%;
-    margin: 0 auto;
-  }
+.card-number {
+margin-top: 2rem;
+}
 
-  .saved-card-btn {
-    margin-top: 1.5rem;
-  }
+.card-element {
+border: 1px solid grey;
+border-radius: 3px;
+padding: 10px;
+width: 55%;
+margin: 0 auto;
+}
+
+.saved-card-btn {
+margin-top: 1.5rem;
+}
 }
 
 .checkout-block{
-  margin-top: 2.5rem!important;
+margin-top: 2.5rem!important;
 }

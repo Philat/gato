@@ -12,11 +12,11 @@ const FeaturedProduct = (props)=>{
 
     return (
       <div className='featured-product'>
-          <Link to={url} >
+          <a href={url} >
           <div className='featured-image'>
               <img src={imageUrl} alt={description}/>
           </div>
-          </Link>
+          </a>
 
           <div className='name-price'>
               <h3> {title}</h3>

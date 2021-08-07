@@ -13,12 +13,10 @@ const GardenPage = () => {
                     <section className="hero is-large is-info hero-image ">
                         <div className='hero-image garden-image'>
                             <div className="hero-body">
-
                             </div>
                         </div>
                     </section>
                 </div>
-
 
                 <SignUp/>
             </Layout>

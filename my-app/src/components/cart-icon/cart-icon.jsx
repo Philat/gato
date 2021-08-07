@@ -9,12 +9,14 @@ const CartIcon = ({history}) => {
     console.log('CartItems: ',cartItems);
 
     return (
-        <div className='cart-container' onClick={ () =>history.push('/cart')}>
-            <img src={shoppingBag} alt='shopping-cart-icon'/>
-                {
-                    itemCount > 0 ? <span className='cart-count'> {itemCount} </span> : null
-                }
-        </div>
+        <a className='cart-container' href='/cart'>
+            <div>
+                <img src={shoppingBag} alt='shopping-cart-icon'/>
+                    {
+                        itemCount > 0 ? <span className='cart-count'> {itemCount} </span> : null
+                    }
+            </div>
+        </a>
     );
 }
 

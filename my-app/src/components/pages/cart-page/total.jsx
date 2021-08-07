@@ -10,7 +10,7 @@ const Total = ({itemCount, total, history, clearCart}) =>{
           </div>
           <div className='checkout'>
               <button className='button is-black'
-                      onClick={()=>history.push('/checkout')}>
+                      onClick={()=>window.open("/checkout","_self")}>
                   ОФОРМИТЬ</button>
               <button className='button is-white'
               onClick={()=>clearCart()}>ОЧИСТИТЬ</button>
