@@ -6,27 +6,31 @@ import {UserContext} from "../../context/user-context";
 import './header.styles.scss';
 
 const Header = () => {
-
     const {user} = useContext(UserContext);
-    console.log('user', user);
+
+    try{
+        window.dataLayer.push({'event':'loginUser', 'user_id': user['id']})
+        }catch(e){
+    }
+
 
     return (
         <nav className='nav-menu container' >
             <div className='logo'>
-                <Link to='/'>Gatto Grigio</Link>
+                <a href='/'>Gatto Grigio</a>
             </div>
 
             <ul id='header'>
-                <li><Link to='/'>Гостиная</Link></li>
-                <li><Link to='/kitchen'>Кухня</Link></li>
-                <li><Link to='/library'>Библиотека</Link></li>
-                <li><Link to='/garden'>Сад</Link></li>
-                <li><Link to='/bedroom'>Спальни</Link></li>
-                <li><Link to='/cabinet'>Кабинет</Link></li>
+                <li><a href='/'>Гостиная</a></li>
+                <li><a href='/kitchen'>Кухня</a></li>
+                <li><a href='/library'>Библиотека</a></li>
+                <li><a href='/garden'>Сад</a></li>
+                <li><a href='/bedroom'>Спальни</a></li>
+                <li><a href='/cabinet'>Кабинет</a></li>
 
-                {!user && <li><Link to='/sign-in'>Вход</Link></li>}
-                {user && <li onClick={()=>auth.signOut()}><Link>Выход</Link></li>}
-                {!user && <li><Link to='/sign-up'>Регистрация</Link></li>}
+                {!user && <li><a href='/sign-in'>Вход</a></li>}
+                {user && <li onClick={()=>auth.signOut()}><a>Выход</a></li>}
+                {!user && <li><a href='/sign-up'>Регистрация</a></li>}
 
             </ul>
             <CartIcon/>
